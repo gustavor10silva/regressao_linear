@@ -1,6 +1,6 @@
 # Descrição do repositório
 
-Este repositório armazena um notebook sobre Regressão Linear, contendo um estudo sobre esse desenvolvido no âmbito do grupo CiDAMO, com a orientação do Profº Lucas Pedroso. O notebook contém:
+Este repositório armazena um notebook sobre Regressão Linear, contendo um estudo sobre esse tema desenvolvido no âmbito do grupo CiDAMO, com a orientação do Profº Lucas Pedroso. O notebook contém:
 
 ```
 1 Introdução
@@ -19,11 +19,11 @@ Este repositório armazena um notebook sobre Regressão Linear, contendo um estu
 
 Apenas a título de ilustração, considere o seguinte conjunto de pontos:
 
-![Dados gerados](imgs/dados_gerados.png "Dados gerados para a regressão linear")
+![Dados gerados](imagens/dados_gerados.png "Dados gerados para a regressão linear")
 
 O que a regressão linear faz (no caso simples), é encontrar a reta que melhor se ajusta no conjunto de pontos, ou seja:
 
-![Dados gerados](imgs/dados_gerados.png "Dados gerados para a regressão linear")
+![Modelo de regressão linear simples](imagens/regressao_linear_simples.png "Modelo de regressão linear simples")
 
 Essa reta será usada para prever novos valores de *y* quando as variáveis preditoras *X* não forem conhecidas. Note que, nesse exemplo, temos apenas uma variável preditora *X*, então trata-se de uma regressão linear simples. Porém, podemos ter várias variáveis preditoras, caracterizando uma regressão linear múltipla.
 

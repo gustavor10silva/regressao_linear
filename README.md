@@ -1,6 +1,6 @@
 # Descrição do repositório
 
-Este repositório armazena um notebook sobre Regressão Linear, contendo um estudo sobre esse tema desenvolvido no âmbito do grupo CiDAMO, com a orientação do Profº Lucas Pedroso. O notebook contém:
+Este repositório armazena um notebook sobre Regressão Linear (simples e múltipla), contendo um estudo sobre esse tema desenvolvido no âmbito do grupo CiDAMO, com a orientação do Profº Lucas Pedroso. O notebook contém:
 
 ```
 1 Introdução

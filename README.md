@@ -1,29 +1,30 @@
-# regressao_linear
-Este repositório armazena um notebook sobre Regressão Linear.
+# Descrição do repositório
 
-Essa é a fórmula geral da regressão linear:
+Este repositório armazena um notebook sobre Regressão Linear, contendo um estudo sobre esse desenvolvido no âmbito do grupo CiDAMO, com a orientação do Profº Lucas Pedroso. O notebook contém:
 
-$$\hat{y} = \theta_0 + \theta_1x_1 + \theta_2x_2 + \ldots + \theta_nx_n$$
+```
+1 Introdução
+  1.1 O problema de regressão
+  1.2 Exemplos
+  1.3 Tipos de regressão
+2 Entendimento da regressão linear
+  2.1 Formalização do problema de regressão linear
+  2.2 Exemplo de aplicação em dados gerados
+3 Regressão linear em um dataset
+  3.1 Treinamento
+  3.2 Teste e avaliação
+```
 
-Queremos aproximar o valor de $y$ com a expressão à direita, onde:
+# Ilustração da regressão linear
 
-* $\hat{y}$ é o valor predito
-* $n$ é o número de variáveis preditoras
-* $x_i$ é o valor da i-ésima variável
-* $\theta_j$ é o j-ésimo parâmetro do modelo ($\theta_0$ é chamado de **viés** (bias), e os demais são chamados de **pesos** das variáveis)
+Apenas a título de ilustração, considere o seguinte conjunto de pontos:
 
-* **Observação:** na equação acima, se $n=1$, temos uma **regressão linear simples**; caso $n>1$, temos uma **regressão linear múltipla**.
+![Dados gerados](imgs/dados_gerados.png "Dados gerados para a regressão linear")
 
-Note que a equação acima pode ser reescrita na forma matricial:
+O que a regressão linear faz (no caso simples), é encontrar a reta que melhor se ajusta no conjunto de pontos, ou seja:
 
-$$\hat{y} = h_\theta(x) = \theta^T \cdot x$$
+![Dados gerados](imgs/dados_gerados.png "Dados gerados para a regressão linear")
 
-Onde:
+Essa reta será usada para prever novos valores de *y* quando as variáveis preditoras *X* não forem conhecidas. Note que, nesse exemplo, temos apenas uma variável preditora *X*, então trata-se de uma regressão linear simples. Porém, podemos ter várias variáveis preditoras, caracterizando uma regressão linear múltipla.
 
-* $\theta$ é o vetor de parâmetros: $\theta = [\theta_0, \theta_1, \theta_2, \ldots, \theta_n]$
-* $x$ é o vetor das variáveis preditoras: $x = [1, x_1, x_2, \ldots, x_n]$
-* $\theta \cdot x$ é o produto vetorial dos vetores $\theta$ e $x$: $\theta \cdot x = \theta_0 + \theta_1x_1 + \theta_2x_2 + \ldots + \theta_nx_n$
-
-Seja $y$ o vetor de rótulos reais. Estamos aproximando $y$ por $\hat{y}$, então estamos cometendo um erro $|\hat{y}_i - y_i| = |\theta^Tx_i - y_i|$. Tecnicamente, o que queremos com a regressão linear é minimizar esse erro, o que é o mesmo que minimizar o MSE (Mean Squared Error, ou Erro Quadrático Médio):
-
-$$MSE(X, h_\theta) = \dfrac{1}{m}\sum_{i=1}^n\left(\theta^Tx_i - y_i\right)^2$$
+Veremos esses dois casos de regressão, com uma aplicação para cada um no notebook deste repositório, bem como a explicação técnica do funcionamento da regressão linear.

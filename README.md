@@ -27,4 +27,4 @@ O que a regressão linear faz (no caso simples), é encontrar a reta que melhor 
 
 Essa reta será usada para prever novos valores de *y* quando as variáveis preditoras *X* não forem conhecidas. Note que, nesse exemplo, temos apenas uma variável preditora *X*, então trata-se de uma regressão linear simples. Porém, podemos ter várias variáveis preditoras, caracterizando uma regressão linear múltipla.
 
-Veremos esses dois casos de regressão, com uma aplicação para cada um no notebook deste repositório, bem como a explicação técnica do funcionamento da regressão linear.
+Veremos esses dois casos de regressão, com uma aplicação para cada um no notebook deste repositório, bem como a explicação técnica do funcionamento da regressão linear..
